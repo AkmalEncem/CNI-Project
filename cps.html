@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Idea | CPS Upcycling</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      ♻ <strong>CPS</strong> <span>Upcycling</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ideas.html">Upcycling Ideas</a></li>
+      <li class="active">Generate Idea</li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="impact.html">Impact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="generate">
+
+<header class="generate-header">
+  <h1>CPS Idea Generator</h1>
+  <p>Follow structured CPS steps to automatically generate sustainable upcycling ideas.</p>
+</header>
+
+<!-- STEP 1 -->
+<div class="generate-card">
+  <span class="step">Step 1</span>
+  <h2>Problem Framing</h2>
+
+  <div class="material-grid">
+    <label class="material"><input type="checkbox" value="waste"> Reduce waste</label>
+    <label class="material"><input type="checkbox" value="reuse"> Reuse materials</label>
+    <label class="material"><input type="checkbox" value="cost"> Low-cost products</label>
+    <label class="material"><input type="checkbox" value="awareness"> Environmental awareness</label>
+  </div>
+</div>
+
+<!-- STEP 2 -->
+<div class="generate-card">
+  <span class="step">Step 2</span>
+  <h2>Material Selection</h2>
+
+  <div class="material-grid">
+    <label class="material"><input type="checkbox" value="plastic"> Plastic</label>
+    <label class="material"><input type="checkbox" value="paper"> Paper</label>
+    <label class="material"><input type="checkbox" value="metal"> Metal</label>
+    <label class="material"><input type="checkbox" value="fabric"> Fabric</label>
+    <label class="material"><input type="checkbox" value="glass"> Glass</label>
+  </div>
+</div>
+
+<!-- STEP 3 -->
+<div class="generate-card">
+  <span class="step">Step 3</span>
+  <h2>Idea Stimulation (CPS Technique)</h2>
+
+  <div class="material-grid">
+    <label class="material"><input type="checkbox" value="repurpose"> Repurpose</label>
+    <label class="material"><input type="checkbox" value="combine"> Combine</label>
+    <label class="material"><input type="checkbox" value="simplify"> Simplify</label>
+    <label class="material"><input type="checkbox" value="newuser"> New user group</label>
+  </div>
+
+  <button class="primary-btn" onclick="generateIdeas()">Generate Ideas</button>
+</div>
+
+<!-- STEP 4 -->
+<div class="generate-card">
+  <span class="step">Step 4</span>
+  <h2>Divergent Ideas</h2>
+  <div id="ideaContainer" class="idea-grid"></div>
+</div>
+
+<!-- STEP 5 -->
+<div class="generate-card">
+  <span class="step">Step 5</span>
+  <h2>Select Best Idea</h2>
+  <p>Choose ONE idea to proceed.</p>
+</div>
+
+<!-- STEP 6 -->
+<div class="generate-card" id="finalStep" style="display:none;">
+  <span class="step">Step 6</span>
+  <h2>Ready for Refinement</h2>
+  <p id="finalIdea"></p>
+  <button class="primary-btn" onclick="goRefine()">Proceed to Refinement</button>
+</div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h3>♻ CPS Upcycling</h3>
+      <p>
+        A Creative Problem Solving (CPS) based platform that promotes sustainable
+        thinking by transforming waste materials into innovative upcycling ideas.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ideas.html">Upcycling Ideas</a></li>
+        <li><a href="cps.html">Generate Idea</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="impact.html">Impact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-right">
+      <h4>Project</h4>
+      <p>
+        Developed as an academic project to encourage recycling, upcycling,
+        and sustainable innovation.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 CPS Upcycling Project</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
